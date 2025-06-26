@@ -1,5 +1,7 @@
 .PHONY: lint test build run docs docs-serve dev
 
+docker_image = template-python-service
+
 lint:
 	uv run	pre-commit run --all-files
 
@@ -8,10 +10,10 @@ test:
 
 
 build:
-	docker build -t {{ docker_image }} .
+	docker build -t $(docker_image) .
 
 run:
-	docker run -p 8000:8000 {{ docker_image }}
+	docker run -p 8000:8000 $(docker_image)
 
 docs:
 	mkdocs build
