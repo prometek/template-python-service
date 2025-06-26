@@ -17,4 +17,3 @@ dependencies = [
 ]
 
 [tool.uv]
-lock = "uv.lock"
