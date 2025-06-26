@@ -24,6 +24,8 @@ dependencies = [
     "fastapi[standard]",
     "pydantic",
     "prometheus-client",
+    "black",
+    "flake8"
 ]
 
 [tool.uv]
