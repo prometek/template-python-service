@@ -1,8 +1,8 @@
 .PHONY: lint test build run docs docs-serve dev
 
 lint:
-	black --check src tests
-	flake8 src tests
+	uv run	black --check src tests
+	uv run flake8 src tests
 	pre-commit run --all-files
 
 test:
