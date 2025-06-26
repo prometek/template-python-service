@@ -2,3 +2,4 @@ src/template_python_service.egg-info
 .venv
 .vscode
 __pycache__
+.coverage

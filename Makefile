@@ -4,7 +4,8 @@ lint:
 	uv run	pre-commit run --all-files
 
 test:
-	pytest --maxfail=1 --disable-warnings -q --cov=src
+	uv run pytest --maxfail=1 --disable-warnings -q --cov=src
+
 
 build:
 	docker build -t {{ docker_image }} .
