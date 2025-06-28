@@ -23,4 +23,4 @@ docs-serve:
 
 dev:
 	devcontainer up --workspace-folder .
-	devcontainer exec -it --workspace-folder . -- /bin/bash
+	devcontainer exec --workspace-folder . -- /bin/bash
