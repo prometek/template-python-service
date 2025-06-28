@@ -22,4 +22,5 @@ docs-serve:
 	mkdocs serve
 
 dev:
-	docker-compose -f docker-compose.dev.yml up --build
+	devcontainer up --workspace-folder .
+	devcontainer exec -it --workspace-folder . -- /bin/bash
